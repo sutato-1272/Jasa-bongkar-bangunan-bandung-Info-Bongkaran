@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jasa Coring & Bobok Beton Bandung | Presisi Tinggi, Eksekusi Cepat</title>
+    <title>Jasa Coring & Bobok Beton Bandung Raya | Spesialis Eksekusi Cepat</title>
     <meta name="description" content="Beton alot bikin proyek mangkrak? Kami ahlinya jasa coring, bobok, dan potong beton di Bandung Raya. Mesin diamond presisi, tanpa getaran merusak pondasi.">
-    <meta name="keywords" content="jasa coring beton bandung, jasa potong beton jawa barat, tukang bobok beton ciparay, core drill aspal lab">
+    <meta name="keywords" content="jasa coring beton bandung, tukang bobok beton babakan ciparay, potong beton jawa barat, core drill aspal">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- LCP PRELOAD GAMBAR ASLI KLIEN -->
+    <!-- LCP PRELOAD GAMBAR HERO ASLI -->
     <link rel="preload" as="image" href="Jasa-Coring-Beton-dan-Potong-Beton-Bandung-Presisi-Tinggi.webp" type="image/webp" fetchpriority="high">
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script defer src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
-    <!-- TRITUNGGAL JSON-LD -->
+    <!-- FASE 2: TRITUNGGAL JSON-LD SILO & AEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -25,9 +25,15 @@
         {
           "@type": "LocalBusiness",
           "@id": "https://jasa-bongkar-bangunan-bandung-info.vercel.app/#organization",
-          "name": "Spesialis Coring & Potong Beton Bandung",
+          "name": "Spesialis Coring & Bobok Beton Bandung",
           "image": "https://jasa-bongkar-bangunan-bandung-info.vercel.app/Jasa-Coring-Beton-dan-Potong-Beton-Bandung-Presisi-Tinggi.webp",
           "telephone": "+6281381315821",
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "84"
+          },
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Gg. KH Ishak Wijaya No.53A, Sukahaji",
@@ -36,11 +42,9 @@
             "postalCode": "40211",
             "addressCountry": "ID"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "84"
-          }
+          "sameAs": [
+            "https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e68e76379b30be7:0xeaacbb28bf1a4dec"
+          ]
         },
         {
           "@type": "WebPage",
@@ -52,9 +56,7 @@
             "https://dongkrakusaha.com/tukang-coring-presisi-jawa-barat",
             "https://dongkrakusaha.com/potong-beton-industri-ciparay",
             "https://dongkrakusaha.com/bongkar-pondasi-aman-cimahi",
-            "https://dongkrakusaha.com/jasa-demolition-pabrik-jawa-barat",
-            "https://dongkrakusaha.com/ahli-core-drill-aspal-bandung",
-            "https://dongkrakusaha.com/sewa-alat-potong-beton-bandung"
+            "https://dongkrakusaha.com/ahli-core-drill-aspal-bandung"
           ]
         },
         {
@@ -77,66 +79,103 @@
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         :root{
-            --bg:#0A0C10; --bg-card:#1A1F29; --accent:#EAB308; --accent-hover:#CA8A04; --text:#F1F5F9; --text-muted:#94A3B8;
+            --bg-dark:#0A0C10; --bg-elevated:#12161E; --bg-card:#1A1F29; --surface:#252B38;
+            --accent:#EAB308; --accent-hover:#CA8A04; --text:#F1F5F9; --text-muted:#94A3B8;
+            --font-body:'Inter',system-ui,-apple-system,sans-serif;
         }
-        html{scroll-behavior:smooth; font-size:16px;}
-        body{font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; overflow-x:hidden;}
+        html{scroll-behavior:smooth; font-size:16px; overflow-x:hidden}
+        body{font-family:var(--font-body); background:var(--bg-dark); color:var(--text); line-height:1.6; overflow-x:hidden;}
         a{text-decoration:none; color:inherit;}
-        img{max-width:100%; height:auto; display:block;}
-        .container{max-width:1200px; margin:0 auto; padding:0 1.5rem;}
+        img{max-width:100%; display:block; height:auto;}
         
+        .container{max-width:1320px; margin:0 auto; padding:0 clamp(1rem,4vw,3rem)}
+        
+        /* ZERO-BLOAT LAZY RENDER */
         .lazy-render { content-visibility: auto; contain-intrinsic-size: 1px 1000px; contain: paint; }
 
         /* NAV */
-        .nav{ position:fixed; top:0; width:100%; background:rgba(10,12,16,0.95); border-bottom:1px solid rgba(234,179,8,0.2); z-index:100; padding:1rem 0; backdrop-filter:blur(5px);}
-        .nav-inner{ display:flex; justify-content:space-between; align-items:center; }
-        .nav-logo{ font-size:1.5rem; font-weight:900; text-transform:uppercase; }
+        .nav{ position:fixed; top:0; left:0; right:0; z-index:100; padding:1rem 0; background:rgba(10,12,16,0.95); backdrop-filter:blur(10px); border-bottom:1px solid rgba(234,179,8,0.2); }
+        .nav-inner{ display:flex; align-items:center; justify-content:space-between; }
+        .nav-logo{ font-size:1.3rem; font-weight:900; color:#fff; text-transform:uppercase; letter-spacing:-0.5px;}
         .nav-logo span{ color:var(--accent); }
-        .btn-sm{ background:var(--accent); color:#000; padding:0.5rem 1rem; font-weight:700; border-radius:4px; font-size:0.85rem;}
+        .nav-links{display:flex; gap:1.5rem; align-items:center}
+        .nav-link{ font-size:0.8rem; text-transform:uppercase; color:var(--text-muted); font-weight:700; transition:0.3s;}
+        .nav-link:hover{color:var(--accent);}
+        .nav-cta{ padding:0.6rem 1.2rem; font-size:0.8rem; text-transform:uppercase; font-weight:800; border-radius:4px; color:#000; background:var(--accent); }
 
         /* AIDA: ATTENTION & INTEREST (HERO) */
-        .hero{ position:relative; min-height:100vh; display:flex; align-items:center; padding-top:80px; }
-        .hero-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; }
-        .hero-overlay{ position:absolute; inset:0; background:linear-gradient(to right, rgba(10,12,16,0.95) 20%, rgba(10,12,16,0.7) 100%); z-index:-1; }
-        .hero-content{ max-width:800px; }
-        .badge{ display:inline-block; border:1px solid var(--accent); padding:0.4rem 1rem; color:var(--accent); font-size:0.8rem; font-weight:700; text-transform:uppercase; margin-bottom:1.5rem; border-radius:50px;}
-        .hero h1{ font-size:clamp(2.5rem, 5vw, 4rem); font-weight:900; line-height:1.1; margin-bottom:1.5rem; }
-        .hero p{ font-size:1.1rem; color:var(--text-muted); margin-bottom:2rem; border-left:3px solid var(--accent); padding-left:1rem;}
+        .hero{ position:relative; min-height:100vh; display:flex; align-items:center; padding:120px 0 60px; overflow:hidden; }
+        .hero-bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; will-change:transform; transform:translateZ(0) scale(1.02); }
+        .hero-overlay{ position:absolute; inset:0; background:linear-gradient(to right, rgba(10,12,16,0.95) 20%, rgba(10,12,16,0.6) 100%); z-index:-1; }
+        @media(max-width:768px){ .hero-overlay{ background:linear-gradient(to bottom, rgba(10,12,16,0.85) 0%, rgba(10,12,16,0.98) 100%); } }
+        .hero-content{ position:relative; z-index:2; max-width:850px; }
+        .badge{ display:inline-flex; align-items:center; border:1px solid var(--accent); padding:0.5rem 1rem; color:var(--accent); font-size:0.8rem; font-weight:700; text-transform:uppercase; margin-bottom:1.5rem; border-radius:4px; background:rgba(234,179,8,0.1);}
+        .hero h1{ font-size:clamp(2.5rem, 6vw, 4.5rem); font-weight:900; line-height:1.1; margin-bottom:1.5rem; }
+        .hero h1 em{ font-style:normal; color:var(--accent); }
+        .hero p{ font-size:clamp(1rem, 1.3vw, 1.15rem); color:rgba(241,245,249,0.9); margin-bottom:2.5rem; border-left:3px solid var(--accent); padding-left:1rem; max-width:700px;}
         
-        .btn-pulse{ display:inline-flex; align-items:center; gap:0.5rem; background:#DC2626; color:#fff; padding:1.2rem 2.5rem; font-weight:900; font-size:1rem; text-transform:uppercase; border-radius:4px; animation:pulse 2s infinite; box-shadow:0 0 20px rgba(220,38,38,0.4);}
+        .btn-pulse{ display:inline-flex; align-items:center; gap:0.7rem; background:#DC2626; color:#fff; padding:1.2rem 2.5rem; font-weight:900; font-size:1rem; text-transform:uppercase; border-radius:4px; animation:pulse 2s infinite; box-shadow:0 10px 20px rgba(220,38,38,0.4); border:1px solid #ef4444;}
         @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(220,38,38,0.7);} 70%{box-shadow:0 0 0 15px rgba(220,38,38,0);} 100%{box-shadow:0 0 0 0 rgba(220,38,38,0);} }
 
-        /* AIDA: DESIRE (SERVICES) */
-        .section{ padding:6rem 0; }
-        .section-title{ font-size:2.5rem; font-weight:900; margin-bottom:1rem; text-align:center;}
-        .section-desc{ text-align:center; color:var(--text-muted); max-width:600px; margin:0 auto 4rem; }
-        
-        .grid-3{ display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; }
-        .card{ background:var(--bg-card); border-radius:8px; overflow:hidden; border:1px solid rgba(255,255,255,0.05); }
-        .card-img{ width:100%; aspect-ratio:3/2; object-fit:cover; }
-        .card-body{ padding:2rem; }
-        .card h3{ font-size:1.3rem; margin-bottom:1rem; }
-        .card p{ color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem; line-height:1.5;}
+        /* GRID & SECTIONS */
+        .section{padding:100px 0; position:relative}
+        .section-label{ font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); margin-bottom:0.75rem; font-weight:800; display:block; }
+        .section-title{ font-size:clamp(2rem,4vw,3rem); font-weight:900; color:var(--text); margin-bottom:3.5rem; line-height:1.2; }
         
         /* AEO BOX */
-        .aeo{ background:var(--bg-card); border-left:4px solid var(--accent); padding:2rem; margin-bottom:4rem; }
-        
+        .aeo-box { background:var(--bg-elevated); padding:2.5rem; border-left:5px solid var(--accent); margin-bottom:4rem; border-radius:0 8px 8px 0; }
+        .aeo-box h3 { font-size:1.2rem; margin-bottom:1rem; color:#fff; }
+        .aeo-box p { font-size:1rem; color:var(--text-muted); line-height:1.6; }
+
+        /* AIDA: DESIRE (SERVICES) */
+        .services-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2rem; }
+        .service-card{ background:var(--bg-elevated); border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.05); display:flex; flex-direction:column; transition:0.3s;}
+        .service-card:hover{ border-color:var(--accent); transform:translateY(-5px);}
+        .service-card-img { width:100%; aspect-ratio:3/2; object-fit:cover; }
+        .service-card-body { padding:2rem; flex-grow:1; display:flex; flex-direction:column; }
+        .service-card h3{ font-size:1.3rem; font-weight:800; margin-bottom:1rem; color:#fff; }
+        .service-card p{ font-size:0.95rem; color:var(--text-muted); line-height:1.6; margin-bottom:2rem; flex-grow:1;}
+        .service-btn { display:block; text-align:center; padding:1rem; background:var(--surface); font-weight:800; font-size:0.85rem; text-transform:uppercase; border-radius:4px; border:1px solid rgba(255,255,255,0.1); transition:0.3s;}
+        .service-btn:hover { background:var(--accent); color:#000; }
+
+        /* TESTIMONI SECTION */
+        .review-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; }
+        .review-card { background:var(--bg-elevated); padding:2rem; border-radius:8px; border:1px solid rgba(255,255,255,0.05); }
+        .review-stars { color:#F59E0B; margin-bottom:1rem; font-size:1.2rem; letter-spacing:2px;}
+        .review-text { font-style:italic; color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem; line-height:1.6; }
+        .review-author { display:flex; align-items:center; gap:1rem; }
+        .author-avatar { width:40px; height:40px; border-radius:50%; background:var(--surface); display:flex; align-items:center; justify-content:center; font-weight:bold; color:var(--accent); }
+
+        /* LOCATION & CONTACT */
+        .location-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+        .contact-info p { color:var(--text-muted); line-height:1.8; margin-bottom:1rem;}
+        .contact-info strong { color:#fff; }
+        .maps-link { display:block; border-radius:12px; overflow:hidden; border:3px solid var(--accent); position:relative; min-height:300px; background:#222;}
+        .maps-link::after { content:"KLIK BUKA GOOGLE MAPS"; position:absolute; bottom:15px; right:15px; background:var(--accent); color:#000; padding:8px 15px; font-size:0.75rem; font-weight:800; border-radius:4px; }
+
         /* FOOTER & TAGS */
-        .tags{ display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:2rem;}
-        .tag{ font-size:0.8rem; background:#111; border:1px solid #333; padding:0.4rem 0.8rem; color:var(--text-muted); border-radius:4px;}
-        .footer{ border-top:1px solid rgba(255,255,255,0.05); padding:3rem 0; margin-top:4rem; text-align:center; }
+        .tags-section { background:var(--bg-elevated); padding:3rem 0; border-top:1px solid rgba(255,255,255,0.05); margin-top:4rem;}
+        .tags-container { display:flex; flex-wrap:wrap; gap:0.75rem; }
+        .tag-item { font-size:0.8rem; background:var(--bg-card); padding:0.5rem 1rem; border-radius:4px; color:var(--text-muted); border:1px solid rgba(255,255,255,0.03); }
         
-        /* MOBILE CTA */
-        .mobile-cta{ display:none; position:fixed; bottom:0; width:100%; background:rgba(10,12,16,0.98); padding:1rem; z-index:110; border-top:1px solid var(--accent);}
-        .mobile-btn{ display:block; text-align:center; background:#10B981; color:#fff; padding:1rem; font-weight:900; border-radius:4px; animation:pulse-green 2s infinite;}
+        .footer{ padding:4rem 0 2rem; }
+        .footer-grid { display:grid; grid-template-columns:1.5fr 1fr 1.5fr; gap:3rem; }
+        .footer h4 { color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1.5rem; font-size:0.9rem;}
+        .footer p { font-size:0.9rem; color:var(--text-muted); line-height:1.6; margin-bottom:0.5rem;}
+        .agency-credit { margin-top:4rem; text-align:center; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.05); }
+
+        /* STICKY MOBILE CTA */
+        .sticky-contact { display:none; position:fixed; bottom:0; left:0; right:0; background:rgba(15,20,28,0.98); padding:1rem; z-index:110; border-top:2px solid #10B981; box-shadow:0 -10px 30px rgba(0,0,0,0.8); }
+        .sticky-btn { display:flex; align-items:center; justify-content:center; gap:0.8rem; background:#10B981; color:#fff; padding:1rem; border-radius:8px; font-weight:900; animation:pulse-green 2s infinite; text-transform:uppercase; font-size:0.95rem; }
         @keyframes pulse-green{ 0%{box-shadow:0 0 0 0 rgba(16,185,129,0.7);} 70%{box-shadow:0 0 0 15px rgba(16,185,129,0);} 100%{box-shadow:0 0 0 0 rgba(16,185,129,0);} }
 
+        @media(max-width:1024px){ .location-grid { grid-template-columns:1fr; } }
         @media(max-width:768px){
-            .nav .btn-sm{ display:none; }
-            body{ padding-bottom:100px; }
-            .mobile-cta{ display:block; }
-            .hero h1{ font-size:2.2rem; }
-            .hero-overlay{ background:linear-gradient(to bottom, rgba(10,12,16,0.85) 0%, rgba(10,12,16,0.98) 100%); }
+            body { padding-bottom:100px; }
+            .nav-links, .nav-cta {display:none}
+            .hero{text-align:left; padding-top:130px; min-height:auto;}
+            .sticky-contact { display:block; }
+            .footer-grid { grid-template-columns:1fr; gap:2.5rem; }
         }
     </style>
 </head>
@@ -144,17 +183,25 @@
 
     <nav class="nav">
         <div class="container nav-inner">
-            <div class="nav-logo">Coring<span>Beton</span></div>
-            <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20butuh%20info%20jasa%20coring/bobok%20beton*" class="btn-sm">Tanya Harga WA</a>
+            <a href="#" class="nav-logo">Coring<span>Bandung</span></a>
+            <div class="nav-links">
+                <a href="#layanan" class="nav-link">Layanan</a>
+                <a href="#testimoni" class="nav-link">Ulasan</a>
+                <a href="#lokasi" class="nav-link">Kontak</a>
+            </div>
+            <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20butuh%20info%20jasa%20coring/bobok%20beton*" class="nav-cta">Konsultasi WA</a>
         </div>
     </nav>
 
     <header class="hero">
-        <img src="Jasa-Coring-Beton-dan-Potong-Beton-Bandung-Presisi-Tinggi.webp" alt="Jasa Coring Beton dan Potong Beton Bandung Presisi Tinggi" class="hero-img" fetchpriority="high" loading="eager" decoding="sync">
+        <img src="Jasa-Coring-Beton-dan-Potong-Beton-Bandung-Presisi-Tinggi.webp" alt="Jasa Coring Beton dan Potong Beton Bandung Presisi Tinggi" class="hero-bg" fetchpriority="high" loading="eager" decoding="sync">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <span class="badge">Spesialis Demolition Jawa Barat</span>
-            <h1>Proyek Mangkrak Gara-gara Beton Alot? Kami Eksekusi Hari Ini.</h1>
+            <div class="badge">
+                <span class="iconify" data-icon="solar:shield-warning-bold" style="margin-right:8px; font-size:1.2rem;"></span>
+                Spesialis Demolition Jawa Barat
+            </div>
+            <h1>Proyek Mangkrak Gara-gara <em>Beton Alot?</em> Kami Eksekusi Hari Ini.</h1>
             <p><strong>Situs ini memuat di bawah 3 detik, secepat respon tim kami ke lokasi Anda.</strong> Lupakan tukang manual yang buang-buang waktu. Kami memotong, melubangi, dan membongkar beton dengan mesin Diamond presisi tinggi tanpa merusak pondasi utama bangunan Anda.</p>
             <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20lihat%20website.%20Saya%20butuh%20survey%20untuk%20pekerjaan%20beton...*" class="btn-pulse">
                 <span class="iconify" data-icon="mdi:whatsapp" style="font-size:1.5rem"></span> Panggil Tim Eksekutor
@@ -163,64 +210,157 @@
     </header>
 
     <div class="lazy-render">
-        <section class="section container">
-            <div class="aeo">
-                <h3 style="color:var(--accent); margin-bottom:0.5rem;">Apakah proses pembongkaran aman untuk struktur gedung?</h3>
+        
+        <section class="section container" id="layanan">
+            <span class="section-label">Layanan Profesional</span>
+            <h2 class="section-title">Solusi Beton Alot <br>Tanpa Merusak Pondasi</h2>
+            
+            <div class="aeo-box">
+                <h3>Apakah proses pembongkaran aman untuk struktur gedung?</h3>
                 <p>Sangat aman. Tim K3 kami menggunakan teknologi <em>Low Vibration Cutting</em>. Kami mengeksekusi slab dan dinding tebal tanpa memicu getaran perusak, menjamin nol risiko retak pada pondasi pilar utama bangunan di sekitarnya.</p>
             </div>
 
-            <h2 class="section-title">Bukti Presisi Lapangan</h2>
-            <p class="section-desc">Kalkulasi presisi, alat berat standar Eropa, dan tenaga operator jam terbang tinggi.</p>
-            
-            <div class="grid-3">
-                <div class="card">
-                    <img src="Hasil-jasa-coring-beton-menembus-besi-tulangan-bulat-sempurna.webp" alt="Hasil jasa coring beton menembus besi tulangan bulat sempurna" class="card-img" loading="lazy" decoding="async">
-                    <div class="card-body">
+            <div class="services-grid">
+                <!-- GAMBAR 1 -->
+                <div class="service-card">
+                    <img src="Hasil-jasa-coring-beton-menembus-besi-tulangan-bulat-sempurna.webp" alt="Hasil jasa coring beton menembus besi tulangan bulat sempurna" class="service-card-img" loading="lazy" decoding="async">
+                    <div class="service-card-body">
                         <h3>Coring Beton Tembus Tulangan</h3>
                         <p>Pembuatan lubang silinder bulat sempurna untuk jalur pipa plumbing & MEP. Mata bor diamond kami sanggup melumat besi tulangan tebal di dalam beton dengan mudah.</p>
+                        <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20tanya%20harga%20jasa%20coring...*" class="service-btn">Tanya Harga Coring</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Mesin-pemotong-lantai-beton-industri-slab-cutting-beroperasi.webp" alt="Mesin pemotong lantai beton industri slab cutting beroperasi" class="card-img" loading="lazy" decoding="async">
-                    <div class="card-body">
+                <!-- GAMBAR 2 -->
+                <div class="service-card">
+                    <img src="Mesin-pemotong-lantai-beton-industri-slab-cutting-beroperasi.webp" alt="Mesin pemotong lantai beton industri slab cutting beroperasi" class="service-card-img" loading="lazy" decoding="async">
+                    <div class="service-card-body">
                         <h3>Slab Cutting (Potong Lantai)</h3>
                         <p>Pemotongan pelat beton industri dan aspal jalan raya menggunakan mesin floor saw bertenaga tinggi. Hasil potongan lurus presisi milimeter untuk modifikasi struktur.</p>
+                        <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20butuh%20info%20potong%20lantai%20beton...*" class="service-btn">Tanya Biaya Cutting</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="Pengambilan-sampel-silinder-core-drill-aspal-jalan-untuk-uji-laboratorium.webp" alt="Pengambilan sampel silinder core drill aspal jalan untuk uji laboratorium" class="card-img" loading="lazy" decoding="async">
-                    <div class="card-body">
-                        <h3>Core Drill Uji Lab</h3>
+                <!-- GAMBAR 3 -->
+                <div class="service-card">
+                    <img src="Pengambilan-sampel-silinder-core-drill-aspal-jalan-untuk-uji-laboratorium.webp" alt="Pengambilan sampel silinder core drill aspal jalan untuk uji laboratorium" class="service-card-img" loading="lazy" decoding="async">
+                    <div class="service-card-body">
+                        <h3>Core Drill Uji Lab / Aspal</h3>
                         <p>Pengambilan sampel material silinder jalan aspal atau dinding beton untuk keperluan uji laboratorium kuat tekan konstruksi sipil. Pengeboran akurat dan cepat.</p>
+                        <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20tanya%20jasa%20core%20drill%20aspal...*" class="service-btn">Info Core Drill</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section container" style="border-top:1px solid rgba(255,255,255,0.05);">
-            <h2 class="section-title" style="text-align:left;">Area Operasional & SEO Lokal</h2>
-            <p style="color:var(--text-muted);">Melayani darurat pembongkaran di area Babakan Ciparay, Kota Bandung, Cimahi, dan seluruh Jawa Barat. Hubungi <strong>0813-8131-5821</strong>.</p>
-            <div class="tags">
-                <span class="tag">Jasa coring beton Bandung</span>
-                <span class="tag">Potong lantai pabrik Cimahi</span>
-                <span class="tag">Bongkar pondasi Babakan Ciparay</span>
-                <span class="tag">Core drill aspal Jawa Barat</span>
-                <span class="tag">Biaya bobok beton per meter</span>
+        <section class="section container" id="testimoni" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <span class="section-label">Google Maps Review</span>
+            <h2 class="section-title">Apa Kata Warga Bandung?</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Sangat puas! Tukang datang on time ke Ciparay, alatnya lengkap. Lubang coring untuk pipa ac sangat rapi tanpa retak sekitarnya."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">B</div>
+                        <div>
+                            <p style="font-weight:700; font-size:0.9rem; color:#fff;">Budi Santoso</p>
+                            <p style="font-size:0.75rem; color:var(--text-muted)">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Pekerjaan bobok pondasi bekas mesin cepat banget kelarnya. Gak ganggu operasional gudang sama sekali. Rekomendasi buat wilayah Bandung!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">H</div>
+                        <div>
+                            <p style="font-weight:700; font-size:0.9rem; color:#fff;">Hendra Wijaya</p>
+                            <p style="font-size:0.75rem; color:var(--text-muted)">Pemilik Usaha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Harganya transparan dari awal lewat WA, eksekusinya rapi. Buat yang cari jasa cutting beton di area Jawa Barat wajib pakai ini."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <p style="font-weight:700; font-size:0.9rem; color:#fff;">Rina Aprilia</p>
+                            <p style="font-size:0.75rem; color:var(--text-muted)">Warga Bandung</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer class="footer container">
-            <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.5rem;">© 2026 Coring Beton Bandung Raya.</p>
-            <p style="font-size:0.85rem; color:#475569;">
-                SEO & Web Development by <a href="https://ciledugpromo.biz.id" target="_blank" rel="nofollow noopener noreferrer" style="color:var(--accent); font-weight:700;">ciledugpromo.biz.id</a>
-            </p>
+        <section class="section container" id="lokasi">
+            <div class="location-grid">
+                <div class="contact-info">
+                    <span class="section-label">Markas Operasional</span>
+                    <h2 class="section-title" style="margin-bottom:1.5rem;">Panggil Kami Sekarang</h2>
+                    <p>Jangan biarkan tukang Anda kebingungan menghadapi beton keras. Serahkan pada kami ahlinya alat berat mini.</p>
+                    
+                    <div style="margin-top:2rem; background:var(--bg-elevated); padding:1.5rem; border-radius:8px; border-left:3px solid var(--accent);">
+                        <p><strong>Alamat Basecamp:</strong><br>Gg. KH Ishak Wijaya No.53A, Sukahaji, Kec. Babakan Ciparay, Kota Bandung, Jawa Barat 40211.</p>
+                        <p style="margin-top:15px; font-size:1.2rem;"><strong>Hotline WA:</strong> <span style="color:var(--accent);">0813-8131-5821</span></p>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e68e76379b30be7:0xeaacbb28bf1a4dec" target="_blank" rel="noopener noreferrer" class="maps-link">
+                        <!-- ILUSTRASI PETA, DIGANTI DENGAN PLACEHOLDER AGAR TIDAK BLANK JIKA GAMBAR PETA TIDAK ADA -->
+                        <img src="https://placehold.co/800x600/222/eab308/webp?text=Peta+Lokasi+Ciparay" alt="peta lokasi jasa coring babakan ciparay" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tags-section">
+            <div class="container">
+                <h4 style="color:var(--accent); margin-bottom:1rem; font-size:1rem;">Pencarian Terkait (Tags Lokal):</h4>
+                <div class="tags-container">
+                    <span class="tag-item">Jasa bobok beton Bandung Raya</span>
+                    <span class="tag-item">Tukang coring lantai Babakan Ciparay</span>
+                    <span class="tag-item">Bongkar bangunan tua Sukahaji</span>
+                    <span class="tag-item">Potong beton aspal Jawa Barat</span>
+                    <span class="tag-item">Harga coring per titik Cimahi</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <h3 style="font-size:1.5rem; color:#fff; font-weight:800; margin-bottom:1rem;">Coring<span style="color:var(--accent)">Bandung</span></h3>
+                        <p>Spesialis jasa coring beton, bobok, dan potong lantai dengan mesin mutakhir. Cepat, tepat, dan pantang mundur sebelum tembus!</p>
+                    </div>
+                    <div>
+                        <h4>Area Layanan</h4>
+                        <p>Kota Bandung</p>
+                        <p>Babakan Ciparay</p>
+                        <p>Cimahi & Padalarang</p>
+                        <p>Seluruh Jawa Barat</p>
+                    </div>
+                    <div>
+                        <h4>Kontak Darurat</h4>
+                        <p>Telp/WA: 0813-8131-5821</p>
+                        <p>Senin - Minggu: Siaga 24 Jam</p>
+                    </div>
+                </div>
+                
+                <div class="agency-credit">
+                    <p style="font-size:0.85rem; color:var(--text-muted);">
+                        © 2026 Spesialis Coring Beton Bandung. All Rights Reserved.<br>
+                        SEO & Web Development by <a href="https://ciledugpromo.biz.id" target="_blank" rel="nofollow noopener noreferrer" style="color:var(--accent); font-weight:700;">ciledugpromo.biz.id</a>
+                    </p>
+                </div>
+            </div>
         </footer>
     </div>
 
-    <!-- MOBILE STICKY CTA W/ WILDCARD -->
-    <div class="mobile-cta">
-        <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20butuh%20survey%20darurat%20untuk%20pekerjaan%20beton...*" class="mobile-btn">
-            <span class="iconify" data-icon="logos:whatsapp-icon" style="font-size:1.2rem; vertical-align:-3px;"></span> WHATSAPP KAMI SEKARANG
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-contact">
+        <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20butuh%20survey%20darurat%20untuk%20pekerjaan%20beton...*" class="sticky-btn">
+            <span class="iconify" data-icon="logos:whatsapp-icon" style="font-size:1.4rem"></span>
+            KONSULTASI WA SEKARANG
         </a>
     </div>
 
