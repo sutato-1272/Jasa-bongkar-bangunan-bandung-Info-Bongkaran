@@ -138,6 +138,13 @@
         .service-btn { display:block; text-align:center; padding:1rem; background:var(--surface); font-weight:800; font-size:0.85rem; text-transform:uppercase; border-radius:4px; border:1px solid rgba(255,255,255,0.1); transition:0.3s;}
         .service-btn:hover { background:var(--accent); color:#000; }
 
+        /* PORTFOLIO GRID (DITAMBAHKAN KEMBALI) */
+        .portfolio-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:15px; margin-top:2rem; }
+        @media(min-width:768px){ .portfolio-grid { grid-template-columns:repeat(4, 1fr); } }
+        .portfolio-item { aspect-ratio:1; overflow:hidden; border-radius:8px; border:1px solid rgba(255,255,255,0.05); }
+        .portfolio-item img { width:100%; height:100%; object-fit:cover; transition:0.5s; filter:grayscale(20%); }
+        .portfolio-item:hover img { transform:scale(1.1); filter:grayscale(0%); }
+
         /* TESTIMONI SECTION */
         .review-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; }
         .review-card { background:var(--bg-elevated); padding:2rem; border-radius:8px; border:1px solid rgba(255,255,255,0.05); }
@@ -151,7 +158,7 @@
         .contact-info p { color:var(--text-muted); line-height:1.8; margin-bottom:1rem;}
         .contact-info strong { color:#fff; }
         .maps-link { display:block; border-radius:12px; overflow:hidden; border:3px solid var(--accent); position:relative; min-height:300px; background:#222;}
-        .maps-link::after { content:"KLIK BUKA GOOGLE MAPS"; position:absolute; bottom:15px; right:15px; background:var(--accent); color:#000; padding:8px 15px; font-size:0.75rem; font-weight:800; border-radius:4px; }
+        .maps-link::after { content:"KLIK BUKA GOOGLE MAPS"; position:absolute; bottom:15px; right:15px; background:var(--accent); color:#000; padding:8px 15px; font-size:0.75rem; font-weight:800; border-radius:4px; z-index:5; }
 
         /* FOOTER & TAGS */
         .tags-section { background:var(--bg-elevated); padding:3rem 0; border-top:1px solid rgba(255,255,255,0.05); margin-top:4rem;}
@@ -186,6 +193,7 @@
             <a href="#" class="nav-logo">Coring<span>Bandung</span></a>
             <div class="nav-links">
                 <a href="#layanan" class="nav-link">Layanan</a>
+                <a href="#portofolio" class="nav-link">Portofolio</a>
                 <a href="#testimoni" class="nav-link">Ulasan</a>
                 <a href="#lokasi" class="nav-link">Kontak</a>
             </div>
@@ -221,7 +229,7 @@
             </div>
 
             <div class="services-grid">
-                <!-- GAMBAR 1 -->
+                <!-- GAMBAR 2 -->
                 <div class="service-card">
                     <img src="Hasil-jasa-coring-beton-menembus-besi-tulangan-bulat-sempurna.webp" alt="Hasil jasa coring beton menembus besi tulangan bulat sempurna" class="service-card-img" loading="lazy" decoding="async">
                     <div class="service-card-body">
@@ -230,7 +238,7 @@
                         <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20tanya%20harga%20jasa%20coring...*" class="service-btn">Tanya Harga Coring</a>
                     </div>
                 </div>
-                <!-- GAMBAR 2 -->
+                <!-- GAMBAR 3 -->
                 <div class="service-card">
                     <img src="Mesin-pemotong-lantai-beton-industri-slab-cutting-beroperasi.webp" alt="Mesin pemotong lantai beton industri slab cutting beroperasi" class="service-card-img" loading="lazy" decoding="async">
                     <div class="service-card-body">
@@ -239,7 +247,7 @@
                         <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20butuh%20info%20potong%20lantai%20beton...*" class="service-btn">Tanya Biaya Cutting</a>
                     </div>
                 </div>
-                <!-- GAMBAR 3 -->
+                <!-- GAMBAR 4 -->
                 <div class="service-card">
                     <img src="Pengambilan-sampel-silinder-core-drill-aspal-jalan-untuk-uji-laboratorium.webp" alt="Pengambilan sampel silinder core drill aspal jalan untuk uji laboratorium" class="service-card-img" loading="lazy" decoding="async">
                     <div class="service-card-body">
@@ -251,6 +259,23 @@
             </div>
         </section>
 
+        <!-- SEKSI PORTOFOLIO (DIKEMBALIKAN DENGAN 8 GAMBAR ASLI) -->
+        <section class="section container" id="portofolio" style="border-top:1px solid rgba(255,255,255,0.05);">
+            <span class="section-label">Dokumentasi Proyek</span>
+            <h2 class="section-title">Bukti Kerja Nyata Lapangan</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><img src="Proyek-pembuatan-lubang-coring-lantai-presisi-di-Bandung.webp" alt="Proyek pembuatan lubang coring lantai presisi di Bandung" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Proyek-pemotongan-dinding-beton-untuk-modifikasi-struktur.webp" alt="Proyek pemotongan dinding beton untuk modifikasi struktur" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Alat-berat-mesin-diamond-core-drill-spesifikasi-standar-Eropa.webp" alt="Alat berat mesin diamond core drill spesifikasi standar Eropa" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Proyek-pengambilan-sampel-core-drill-aspal-di-jalan-raya.webp" alt="Proyek pengambilan sampel core drill aspal di jalan raya" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Jasa-wire-saw-pemotongan-pilar-beton-pabrik-industri.webp" alt="Jasa wire saw pemotongan pilar beton pabrik industri" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Hasil-coring-beton-simetris-untuk-jalur-pipa-instalasi-MEP-gedung.webp" alt="Hasil coring beton simetris untuk jalur pipa instalasi MEP gedung" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Pengangkatan-pelat-beton-hasil-slab-cutting-secara-presisi.webp" alt="Pengangkatan pelat beton hasil slab cutting secara presisi" loading="lazy" decoding="async"></div>
+                <div class="portfolio-item"><img src="Operasional-mesin-wall-saw-memotong-tembok-beton-tebal.webp" alt="Operasional mesin wall saw memotong tembok beton tebal" loading="lazy" decoding="async"></div>
+            </div>
+        </section>
+
+        <!-- SEKSI TESTIMONI -->
         <section class="section container" id="testimoni" style="border-top:1px solid rgba(255,255,255,0.05);">
             <span class="section-label">Google Maps Review</span>
             <h2 class="section-title">Apa Kata Warga Bandung?</h2>
@@ -291,6 +316,7 @@
             </div>
         </section>
 
+        <!-- SEKSI LOKASI & PETA ASLI -->
         <section class="section container" id="lokasi">
             <div class="location-grid">
                 <div class="contact-info">
@@ -305,13 +331,14 @@
                 </div>
                 <div>
                     <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e68e76379b30be7:0xeaacbb28bf1a4dec" target="_blank" rel="noopener noreferrer" class="maps-link">
-                        <!-- ILUSTRASI PETA, DIGANTI DENGAN PLACEHOLDER AGAR TIDAK BLANK JIKA GAMBAR PETA TIDAK ADA -->
-                        <img src="https://placehold.co/800x600/222/eab308/webp?text=Peta+Lokasi+Ciparay" alt="peta lokasi jasa coring babakan ciparay" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;">
+                        <!-- GAMBAR 13: PETA LOKASI ASLI -->
+                        <img src="Peta-lokasi-operasional-Jasa-Coring-Beton-Teknik-Perdana-di-Galeri-Ciumbuleuit-Bandung.webp" alt="Peta lokasi operasional Jasa Coring Beton Teknik Perdana di Galeri Ciumbuleuit Bandung" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.8;">
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- TAGS LSI -->
         <section class="tags-section">
             <div class="container">
                 <h4 style="color:var(--accent); margin-bottom:1rem; font-size:1rem;">Pencarian Terkait (Tags Lokal):</h4>
@@ -325,6 +352,7 @@
             </div>
         </section>
 
+        <!-- FOOTER AGENCY CREDIT -->
         <footer class="footer">
             <div class="container">
                 <div class="footer-grid">
