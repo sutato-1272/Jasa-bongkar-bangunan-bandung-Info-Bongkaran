@@ -17,16 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script defer src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
-    <!-- FASE 2: TRITUNGGAL JSON-LD SILO & AEO -->
+    <!-- FASE 2: TRITUNGGAL JSON-LD SILO & AEO (URL TERBARU) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "LocalBusiness",
-          "@id": "https://jasa-bongkar-bangunan-bandung-info.vercel.app/#organization",
+          "@id": "https://jasa-bongkar-bangunan-bandung-info-bongkaran.vercel.app/#organization",
           "name": "Spesialis Coring & Bobok Beton Bandung",
-          "image": "https://jasa-bongkar-bangunan-bandung-info.vercel.app/Jasa-Coring-Beton-dan-Potong-Beton-Bandung-Presisi-Tinggi.webp",
+          "image": "https://jasa-bongkar-bangunan-bandung-info-bongkaran.vercel.app/Jasa-Coring-Beton-dan-Potong-Beton-Bandung-Presisi-Tinggi.webp",
           "telephone": "+6281381315821",
           "priceRange": "$$",
           "aggregateRating": {
@@ -48,8 +48,8 @@
         },
         {
           "@type": "WebPage",
-          "@id": "https://jasa-bongkar-bangunan-bandung-info.vercel.app/#webpage",
-          "url": "https://jasa-bongkar-bangunan-bandung-info.vercel.app",
+          "@id": "https://jasa-bongkar-bangunan-bandung-info-bongkaran.vercel.app/#webpage",
+          "url": "https://jasa-bongkar-bangunan-bandung-info-bongkaran.vercel.app",
           "name": "Jasa Coring & Bobok Beton Bandung",
           "relatedLink": [
             "https://dongkrakusaha.com/jasa-bobok-beton-cepat-bandung",
@@ -79,8 +79,9 @@
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
         :root{
+            /* PATCH AKSESIBILITAS: Menerangkan warna text-muted ke #CBD5E1 agar rasio kontras tembus standar AAA Google */
             --bg-dark:#0A0C10; --bg-elevated:#12161E; --bg-card:#1A1F29; --surface:#252B38;
-            --accent:#EAB308; --accent-hover:#CA8A04; --text:#F1F5F9; --text-muted:#94A3B8;
+            --accent:#EAB308; --accent-hover:#CA8A04; --text:#F8FAFC; --text-muted:#CBD5E1;
             --font-body:'Inter',system-ui,-apple-system,sans-serif;
         }
         html{scroll-behavior:smooth; font-size:16px; overflow-x:hidden}
@@ -138,7 +139,7 @@
         .service-btn { display:block; text-align:center; padding:1rem; background:var(--surface); font-weight:800; font-size:0.85rem; text-transform:uppercase; border-radius:4px; border:1px solid rgba(255,255,255,0.1); transition:0.3s;}
         .service-btn:hover { background:var(--accent); color:#000; }
 
-        /* PORTFOLIO GRID (DITAMBAHKAN KEMBALI) */
+        /* PORTFOLIO GRID */
         .portfolio-grid { display:grid; grid-template-columns:repeat(2, 1fr); gap:15px; margin-top:2rem; }
         @media(min-width:768px){ .portfolio-grid { grid-template-columns:repeat(4, 1fr); } }
         .portfolio-item { aspect-ratio:1; overflow:hidden; border-radius:8px; border:1px solid rgba(255,255,255,0.05); }
@@ -190,7 +191,7 @@
 
     <nav class="nav">
         <div class="container nav-inner">
-            <a href="#" class="nav-logo">Coring<span>Bandung</span></a>
+            <a href="#" class="nav-logo" aria-label="Beranda">Coring<span>Bandung</span></a>
             <div class="nav-links">
                 <a href="#layanan" class="nav-link">Layanan</a>
                 <a href="#portofolio" class="nav-link">Portofolio</a>
@@ -206,13 +207,13 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <div class="badge">
-                <span class="iconify" data-icon="solar:shield-warning-bold" style="margin-right:8px; font-size:1.2rem;"></span>
+                <span class="iconify" data-icon="solar:shield-warning-bold" aria-hidden="true" style="margin-right:8px; font-size:1.2rem;"></span>
                 Spesialis Demolition Jawa Barat
             </div>
             <h1>Proyek Mangkrak Gara-gara <em>Beton Alot?</em> Kami Eksekusi Hari Ini.</h1>
             <p><strong>Situs ini memuat di bawah 3 detik, secepat respon tim kami ke lokasi Anda.</strong> Lupakan tukang manual yang buang-buang waktu. Kami memotong, melubangi, dan membongkar beton dengan mesin Diamond presisi tinggi tanpa merusak pondasi utama bangunan Anda.</p>
             <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20lihat%20website.%20Saya%20butuh%20survey%20untuk%20pekerjaan%20beton...*" class="btn-pulse">
-                <span class="iconify" data-icon="mdi:whatsapp" style="font-size:1.5rem"></span> Panggil Tim Eksekutor
+                <span class="iconify" data-icon="mdi:whatsapp" aria-hidden="true" style="font-size:1.5rem"></span> Panggil Tim Eksekutor
             </a>
         </div>
     </header>
@@ -259,7 +260,7 @@
             </div>
         </section>
 
-        <!-- SEKSI PORTOFOLIO (DIKEMBALIKAN DENGAN 8 GAMBAR ASLI) -->
+        <!-- SEKSI PORTOFOLIO -->
         <section class="section container" id="portofolio" style="border-top:1px solid rgba(255,255,255,0.05);">
             <span class="section-label">Dokumentasi Proyek</span>
             <h2 class="section-title">Bukti Kerja Nyata Lapangan</h2>
@@ -330,8 +331,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e68e76379b30be7:0xeaacbb28bf1a4dec" target="_blank" rel="noopener noreferrer" class="maps-link">
-                        <!-- GAMBAR 13: PETA LOKASI ASLI -->
+                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x2e68e76379b30be7:0xeaacbb28bf1a4dec" target="_blank" rel="noopener noreferrer" class="maps-link" aria-label="Buka Lokasi Kami di Google Maps">
                         <img src="Peta-lokasi-operasional-Jasa-Coring-Beton-Teknik-Perdana-di-Galeri-Ciumbuleuit-Bandung.webp" alt="Peta lokasi operasional Jasa Coring Beton Teknik Perdana di Galeri Ciumbuleuit Bandung" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.8;">
                     </a>
                 </div>
@@ -387,7 +387,7 @@
     <!-- STICKY MOBILE CTA -->
     <div class="sticky-contact">
         <a href="https://wa.me/6281381315821?text=*Halo%20Admin,%20saya%20butuh%20survey%20darurat%20untuk%20pekerjaan%20beton...*" class="sticky-btn">
-            <span class="iconify" data-icon="logos:whatsapp-icon" style="font-size:1.4rem"></span>
+            <span class="iconify" data-icon="logos:whatsapp-icon" aria-hidden="true" style="font-size:1.4rem"></span>
             KONSULTASI WA SEKARANG
         </a>
     </div>
